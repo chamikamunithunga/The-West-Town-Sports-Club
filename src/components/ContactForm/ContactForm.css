@@ -1,0 +1,111 @@
+.glass-icon {
+  width: 280px;
+  padding: 20px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 24px;
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+  color: black;
+  transition: background 0.4s ease, box-shadow 0.4s ease, transform 0.3s ease;
+  cursor: default;
+  user-select: none;
+}
+
+.glass-icon:hover {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow:
+    0 16px 40px rgba(0, 0, 0, 0.25),
+    0 0 10px rgba(0, 0, 0, 0.6);
+  transform: translateY(-6px);
+}
+
+.instagram-color {
+  color: #c13584; /* Instagram pink/purple */
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.instagram-color:hover {
+  color: #e4405f;
+  text-shadow: 0 0 8px #e4405f;
+}
+
+.facebook-color {
+  color: #1877f2; /* Facebook blue */
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.facebook-color:hover {
+  color: #0057d9;
+  text-shadow: 0 0 8px #0057d9;
+}
+
+.whatsapp-color {
+  color: #25d366; /* WhatsApp green */
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.whatsapp-color:hover {
+  color: #1ebe57;
+  text-shadow: 0 0 8px #1ebe57;
+}
+
+.icon-label {
+  margin-top: 12px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #222;
+  letter-spacing: 0.03em;
+  transition: color 0.3s ease;
+}
+
+.shop-label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #444;
+  text-align: center;
+  margin-top: 6px;
+  letter-spacing: 0.02em;
+  transition: color 0.3s ease;
+}
+
+.glass-icon:hover .icon-label,
+.glass-icon:hover .shop-label {
+  color: #000000;
+}
+
+.glass-icon-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 12px;
+}
+
+.social-icons-container {
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.club-title {
+  font-size: 2.8rem;
+  font-weight: 900;
+  margin-bottom: 3rem;
+  color: #000000;
+  text-align: center;
+  text-shadow: 0 0 6px #636363aa;
+  letter-spacing: 0.1em;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Optional: Smooth font appearance */
+body, .glass-icon, .club-title, .icon-label, .shop-label {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
